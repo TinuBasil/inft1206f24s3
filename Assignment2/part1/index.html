@@ -3,9 +3,9 @@
 	File: index.html
 	Date: 25 September 2024
 	a visually appealing page for Mozilla that highlights the company's goal of preserving free and open internet access via international cooperation.
-	-->
+-->
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -13,7 +13,6 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <style>
       /* header and body setup */
-
       html {
         font-family: 'Open Sans', sans-serif;
         background: url(pattern.png);
@@ -28,7 +27,6 @@
       }
 
       /* Header styling */
-
       header {
         height: 150px;
       }
@@ -47,7 +45,6 @@
       }
 
       /* main section and video styling */
-
       main {
         background: #ccc;
       }
@@ -68,10 +65,10 @@
         float: left;
         margin: 0 20px 20px 0;
         max-width: 100%;
+        border: none;
       }
 
       /* further info links */
-
       .further-info {
         clear: left;
         padding: 40px 0;
@@ -93,26 +90,17 @@
       .clearfix {
         clear: both;
       }
-
-      /* Red panda image */
-
-      .red-panda img {
-        display: block;
-        max-width: 100%;
-      }
     </style>
   </head>
   <body>
     <header>
       <h1>Mozilla</h1>
-      <!-- insert <img> element, link to the small
-          version of the Firefox logo -->
-
+      <img src="/image/firefox_logo-only_RGB.png" alt="Firefox logo">
     </header>
 
     <main>
       <article>
-        <!-- insert iframe from youtube -->
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/ojcNcvb1olg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <h2>Rocking the free web</h2>
 
@@ -122,26 +110,20 @@
       </article>
 
       <div class="further-info">
-        <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img src="/image/firefox_logo-only_RGB.png" alt="Firefox logo">
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img src="/image/mozilla-dinosaur-head.png" alt="Mozilla Dinosaur Head logo">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img src="/image/firefox-addons.jpg" alt="Firefox addons logo">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img src="/image/mdn.svg" alt="MDN banner">
         </a>
         <div class="clearfix"></div>
       </div>
-
-      <div class="red-panda">
-        <!-- insert picture element -->
-      </div>
-
     </main>
   </body>
 </html>
