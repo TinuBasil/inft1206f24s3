@@ -34,6 +34,8 @@ nav {
   flex-direction: column;
   align-items: flex-start;
   margin: 20px; 
+  background-color: #f4f4f4; /* Background color for nav */
+  padding: 10px; /* Additional padding for nav */
 }
 
 nav a {
@@ -45,6 +47,11 @@ nav a {
   border: 1px solid #8B5E4B;
   text-align: center;
   transition: background-color 0.3s ease;
+}
+
+nav button {
+  text-align: center;
+  font-weight: bold; /* Bold text for buttons in nav */
 }
 
 footer {
@@ -123,17 +130,6 @@ button {
 button:hover {
   background-color: #a66; /* Button background color on hover */
   color: #fff; /* Text color change on hover */
-}
-
-/* Navigation Menu */
-nav {
-  background-color: #f4f4f4; /* Background color for nav */
-  padding: 10px; /* Additional padding for nav */
-}
-
-nav button {
-  text-align: center;
-  font-weight: bold; /* Bold text for buttons in nav */
 }
 
 /* Additional styles for layout */
