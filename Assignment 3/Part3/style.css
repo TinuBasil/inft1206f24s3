@@ -101,3 +101,32 @@ a[href*="http"]::after {
     content: '🔗'; /* Insert external link icon */
     margin-left: 5px; /* Space between text and icon */
 }
+
+/* Push 4: Lists and Navigation Menu Styling */
+
+/* Lists */
+ul, ol {
+    padding: 0;
+    margin: 1rem 0; /* Top and bottom margin similar to paragraphs */
+}
+
+li {
+    line-height: 1.6; /* Same line-height as paragraphs */
+    list-style-type: disc; /* Default bullet */
+    margin-left: 1.5em; /* Indentation for list items */
+}
+
+/* Custom Bullet Style (if desired) */
+li {
+    list-style-image: url('path/to/custom-bullet.png'); /* Replace with actual bullet image */
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #f4f4f4; /* Background color for nav */
+    padding: 10px; /* Additional padding for nav */
+}
+
+nav a {
+    display: block; /* Make links block-level */
+    padding: 10px; /* Add padding for clickable
