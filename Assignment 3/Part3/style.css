@@ -1,45 +1,71 @@
 /* General setup */
-
 * {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     margin: 0 auto;
     min-width: 1000px;
     max-width: 1400px;
-  }
-  
-  /* Layout */
-  
-  section {
+}
+
+/* Layout */
+section {
     float: left;
     width: 50%;
-  }
-  
-  aside {
+}
+
+aside {
     float: left;
     width: 30%;
-  }
-  
-  nav {
+}
+
+nav {
     float: left;
     width: 20%;
-  }
-  
-  footer {
+}
+
+footer {
     clear: both;
-  }
-  
-  header, section, aside, nav, footer {
+}
+
+header, section, aside, nav, footer {
     padding: 20px;
-  }
-  
-  /* header and footer */
-  
-  header, footer {
+}
+
+/* Header and footer */
+header, footer {
     border-top: 5px solid #a66;
     border-bottom: 5px solid #a66;
-  }
-  
-  /* WRITE YOUR CODE BELOW HERE */
+}
+
+/* Push 2: Fonts and General Text Styling */
+
+/* Fonts */
+@font-face {
+    font-family: 'HeadingFontName'; /* Replace with actual heading font name */
+    src: url('path/to/heading-font.woff2') format('woff2'), /* Replace with actual font file paths */
+         url('path/to/heading-font.woff') format('woff');
+}
+
+body {
+    font-family: 'SerifFontName', serif; /* Replace with actual serif font name */
+    font-size: 10px; /* Set site-wide font size */
+    line-height: 1.6; /* Appropriate line height for readability */
+    letter-spacing: 0.5px; /* Slight letter spacing for body text */
+    word-spacing: 1px; /* Add some word spacing */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'HeadingFontName', sans-serif; /* Apply heading font */
+    letter-spacing: 1px; /* Add letter spacing to headings */
+}
+
+h1 {
+    text-align: center; /* Center the top-level heading */
+    font-size: 2.5rem; /* Adjust size as appropriate */
+}
+
+p {
+    text-indent: 20px; /* Indent first paragraph after each heading */
+}
