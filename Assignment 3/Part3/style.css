@@ -69,3 +69,35 @@ h1 {
 p {
     text-indent: 20px; /* Indent first paragraph after each heading */
 }
+
+/* Push 3: Links Styling */
+
+a {
+    color: #a66; /* Default link color */
+    text-decoration: underline; /* Underline by default */
+}
+
+a:visited {
+    color: #b77; /* Visited link color */
+}
+
+a:hover, a:focus {
+    text-decoration: none; /* Remove underline on hover/focus */
+    color: #c88; /* Change color on hover/focus */
+}
+
+a:active {
+    color: #d99; /* Active link color */
+    font-weight: bold; /* Make active link stand out */
+}
+
+/* Remove default focus outline */
+a:focus {
+    outline: none;
+}
+
+/* External Links */
+a[href*="http"]::after {
+    content: '🔗'; /* Insert external link icon */
+    margin-left: 5px; /* Space between text and icon */
+}
