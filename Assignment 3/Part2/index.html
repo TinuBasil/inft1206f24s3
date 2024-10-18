@@ -11,9 +11,32 @@ Description: This code uses HTML and CSS to generate a red box that is centered 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Cool Box</title>
-    <link rel="stylesheet" href="./style.css"> <!-- Link to the CSS file -->
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+
+      .cool-box {
+        background-color: red;
+        color: white;
+        font-size: 24px;
+        padding: 50px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-      <div>This is a cool box</div>
+    <div class="cool-box">This is a cool box</div>
   </body>
 </html>
