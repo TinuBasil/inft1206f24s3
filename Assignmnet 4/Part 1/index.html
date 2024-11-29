@@ -1,0 +1,36 @@
+<!--Title: assignment-4 part 1
+    Name: Tinu basil
+    Date: Nov 28,2024
+    purpose: Random Story Generating 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Story Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Random Story Generator</h1>
+    <p>Enter a custom name (optional):</p>
+    <input type="text" id="customname" placeholder="Enter custom name">
+    
+    <p>Choose units:</p>
+    <label>
+      <input type="radio" name="units" id="us" checked>
+      US
+    </label>
+    <label>
+      <input type="radio" name="units" id="uk">
+      UK
+    </label>
+    
+    <button class="randomize">Generate random story</button>
+    
+    <p class="story"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
